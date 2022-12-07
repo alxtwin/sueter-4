@@ -1,26 +1,83 @@
-body{
-    font-family: monospace;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+.header-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vmin 1.5vmin;
+    overflow: hidden;
+    font-size: 2vmin;
 }
 
-.limit{
-    width:50px;
-    word-wrap: break-word;
-}
-
-.title{
+.string {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: yellow;
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
+    animation: move 4s infinite;
 }
 
-.subtitle{
-    text-align:center;
-    background-color:yellow;
+.greeting {
+    position: relative;
+    top: 8.6vmin;
+    animation: white-out 5s infinite;
 }
 
-.container-input{
-    background-color:yellowgreen;
+.title {
+    color: #c678dd;
+}
+
+.container {
+    display: flex;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-size: 2.5vmin;
+    font-family: JetBrains Mono, monospace;
+    width: 50%;
+    height: 50%;
+}
+
+/* 
+.text-input{
+    display: flex;
+} */
+
+.text {
+    /* align-items: center; */
+    font-weight: bolder;
+    /* justify-content: center; */
+    /* display: flex; */
+    color: white;
+}
+
+input[type="text"],
+[type="password"],
+textarea {
+    align-items: center;
+    font-weight: bolder;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-family: JetBrains Mono, monospace;
+}
+
+button {
+    background-color: #4f545d;
+    color: white;
+    border-style: none;
+    font-size: 2.5vmin;
+    font-family: JetBrains Mono, monospace;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #282c34;
+    font-family: JetBrains Mono, monospace;
+    color: #e4bb68;
 }
